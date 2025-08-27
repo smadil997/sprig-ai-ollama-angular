@@ -1,0 +1,32 @@
+@if (showSpinner) {
+<div class="card flex justify-center">
+    <p-progress-spinner strokeWidth="8" fill="transparent" animationDuration=".5s" [style]="{ width: '50px', height: '50px' }" />
+</div>
+}
+@if (showResponse) {
+<div class="prompt-card">
+    <p-card [style]="{ width: '50%', overflow: 'hidden' }">
+        <ng-template #title> {{prompt}} </ng-template>
+        @for (msg of messages; track msg) {
+        <div class="msg">{{ msg }}</div>
+        }
+    </p-card>
+</div>
+}
+
+
+@if (showResponse) {
+<div class="if-prompt">
+    <p-iconfield class="input-per">
+        <input pInputText [(ngModel)]="prompt" placeholder="Call me ollama" pSize="large" />
+        <p-inputicon (click)="searchPrompt()" class="pi pi-search" />
+    </p-iconfield>
+</div>
+} @else {
+<div class="main-con">
+    <p-iconfield class="input-per">
+        <input pInputText [(ngModel)]="prompt" placeholder="Call me ollama" pSize="large" />
+        <p-inputicon (click)="searchPrompt()" class="pi pi-search" />
+    </p-iconfield>
+</div>
+}

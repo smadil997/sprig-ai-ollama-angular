@@ -1,0 +1,67 @@
+@import "primeicons/primeicons.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-con {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    align-content: space-between;
+    width: 100%;
+    margin-top: 34%;
+    flex-wrap: wrap;
+}
+
+.prompt-card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.msg {
+    color: gray;
+    margin-right: 2.2px;
+    display: inline-flex;
+}
+
+.input-per {
+    width: 50%;
+}
+
+.input-per input {
+    height: 61px;
+    width: 100%;
+}
+
+.if-prompt {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    align-content: space-between;
+    width: 100%;
+    margin-top: 34%;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 8%;
+}
+
+.search-icon {
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+}
+
+.card {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    height: 70vh;
+    display: inline-block;
+    background: #fff;
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+}
