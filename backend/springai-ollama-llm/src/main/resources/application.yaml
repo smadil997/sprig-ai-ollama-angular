@@ -1,1 +1,15 @@
-spring.application.name=springai-ollama-llm
+
+spring:
+  application:
+    name: springai-ollama-llm
+  ai:
+    ollama:
+      init:
+      chat:
+        options:
+          model: gemma3:4b #Defind your local downloaded model here otherwise spring application load default model mistral
+          temperature: 0.9  #The temperature of the model. Increasing the temperature will make the model answer more creatively. Maximum temperature supported in Ollama is generally 2.0, but recommended max is 1.0
+        pull-model-strategy: never #Alwway use never if you don't want to download at application load/run time
+        chat:
+          additional-models:
+            - gemma3:4b
