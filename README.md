@@ -1,15 +1,23 @@
-To create and download the README.md file, you'll need to be logged into ChatGPT with access to the ChatGPT canvas feature. Once enabled, I can generate the file for you.
-
-Meanwhile, here’s the full text you can copy and save as `README.md` on your local machine:
-
-````markdown
 # 🧠 Spring AI with Ollama – Local Setup Guide
+
+### 🔑 Project Topics
+- Ollama Model Integration  
+- RAG (Retrieval-Augmented Generation) Application Integration  
+- Ollama Embedded Model Prompt Generation  
+
+---
 
 This project demonstrates how to run a **Spring Boot application** that uses **Spring AI** with an **open-source LLM** via **Ollama**, entirely on your local machine – no external APIs required.
 
 ---
-![Flow of RAG](https://github.com/smadil997/sprig-ai-ollama-angular/blob/master/mis-data/flow-of-rag.png)
 
+## 📊 Architecture / Flow Diagram
+
+Below is the high-level flow of how Spring AI integrates with Ollama:
+
+![Flow of RAG](https://raw.githubusercontent.com/smadil997/sprig-ai-ollama-angular/master/mis-data/flow-of-rag.png)
+
+---
 
 ## ✅ Prerequisites
 
@@ -32,7 +40,7 @@ Make sure the following are installed:
   ```bash
   ollama pull llama3
   ollama run llama3
-````
+  ```
 
 > ✅ This will start Ollama on `http://localhost:11434`
 
@@ -94,5 +102,3 @@ ng serve
 * Ollama runs completely offline once the model is downloaded.
 * You can switch LLMs easily with `ollama pull <model-name>` and update your config.
 * Ideal for experimentation, privacy-focused development, or building local AI tools.
-
-
