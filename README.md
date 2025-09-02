@@ -8,6 +8,8 @@ Meanwhile, here’s the full text you can copy and save as `README.md` on your l
 This project demonstrates how to run a **Spring Boot application** that uses **Spring AI** with an **open-source LLM** via **Ollama**, entirely on your local machine – no external APIs required.
 
 ---
+![Flow of RAG](https://github.com/smadil997/sprig-ai-ollama-angular/blob/master/mis-data/flow-of-rag.png)
+
 
 ## ✅ Prerequisites
 
