@@ -15,7 +15,7 @@ This project demonstrates how to run a **Spring Boot application** that uses **S
 
 Below is the high-level flow of how Spring AI integrates with Ollama:
 
-![Flow of RAG](https://raw.githubusercontent.com/smadil997/sprig-ai-ollama-angular/master/mis-data/flow-of-rag.png)
+![Flow of RAG](https://raw.githubusercontent.com/smadil997/spring-ai-ollama-angular/master/mis-data/flow-of-rag.png)
 
 ---
 
